@@ -49,5 +49,10 @@ interface IProps {
     setName: React.Dispatch<React.SetStateAction<string>
 }
 ```
-值得注意的是，如果当我们需要将 setName 这个方法传入到子组件的时候，我们最好按照上面 IProps 这个接口这样去定义。
+值得注意的是，如果当我们需要将 setName 这个方法传入到子组件的时候，我们最好按照上面 IProps 这个接口这样去定义 setName 这个方法的属性，会使它更加精准。
 
+#### useRef
+
+```
+
+```
