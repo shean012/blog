@@ -16,6 +16,10 @@ interface IProps {
 }
 ```
 
+##### ReactChild
+
+组件的 children 属性，用于定于子组件
+
 #### 定义组件
 
 ```
