@@ -15,10 +15,23 @@ interface IProps {
     style?: CSSProperties | undefined;
 }
 ```
-
 ##### ReactChild
 
 组件的 children 属性，用于定于子组件
+
+##### 定义静态属性
+在函数式组件中，定义静态属性或方法可以通过以下例子实现：
+```
+type IComp<T> = React.FunctionComponent<T> & {
+  Func: typeof staticFn;
+}
+
+const Comp: IComp<IProps> = (props) => {}
+
+const staticFn = () => {...}
+
+Comp.Func = staticFn;
+```
 
 #### 定义组件
 
